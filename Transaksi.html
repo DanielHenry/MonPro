@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+	<head>
+		<title>MonPro</title>
+		<!--link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.css">
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.js" type="text/javascript"></script>
+		<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="bootstrap-3.3.5-dist/js/jquery-2.1.4.js" type="text/javascript"></script-->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<style>
+			.vertical {
+			  display: inline-block;
+			  width: 20%;
+			  height: 40px;
+			  -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+			  transform: rotate(-90deg);
+			}
+			.vertical {
+			  box-shadow: inset 0px 4px 6px #ccc;
+			}
+			.progress-bar {
+			  box-shadow: inset 0px 4px 6px rgba(100,100,100,0.6);
+			}
+			#JenisBaru	{
+				visibility: hidden;
+			}
+		</style>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">MonPro</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<!--li class="active"><a href="#">Tambah Proyek<span class="sr-only">(current)</span></a></li-->
+				<li><a href="#">Home</a></li>
+				<li class="active"><a href="#">Transaksi<span class="sr-only">(current)</span></a></li>
+				<li><a href="#">Aktivitas</a></li>
+				<li><a href="#">PJ (Kepala Proyek)</a></li>
+				<!--li><a href="#">Tambah Master</a></li-->
+			  </ul>
+			  <form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="Cari">
+				</div>
+				<button type="submit" class="btn btn-default">Cari</button>
+			  </form>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Log Out</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!--div class="container"-->
+			<!--h2 style="padding-top: 50px;">Lihat Proyek</h2-->
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-8">
+				<h2>Transaksi</h2>
+			<br/>
+			<form role="form">
+				<div class="form-group">
+					 
+					<label for="Nama_Proyek">
+						Nama Proyek
+					</label>
+					<input class="form-control" id="Nama_Proyek" type="text" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="Jenis_Proyek">
+						Jenis Proyek
+					</label>
+					<div class="row">
+						<div class="col-md-8">
+							<select class="form-control" id="Jenis_Proyek">
+								<option>
+									Gudang01
+								</option>
+								<option>
+									Gudang02
+								</option>
+								<option>
+									Gudang03
+								</option>
+								<option>
+									Gudang_William
+								</option>
+								<option>
+									Rumah01
+								</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<button type="button" class="btn btn-default btn-success" onclick="myFunction()">
+								+
+							</button>
+						</div>
+				</div>
+				<div class="form-group" id ="JenisBaru">
+					 
+					<label for="NamaJenisBaru">
+						Nama Jenis Baru
+					</label>
+					<input class="form-control" id="NamaJenisBaru" type="text" />
+				</div>
+				<div class="form-group">
+					 
+					<div class="row">
+						<div class="col-md-4">
+							<label for="StartDate">
+								Start Date
+							</label>
+							<input class="form-control" id="StartDate" type="date" value="31-08-2015"/>
+						</div>
+						<div class="col-md-4">
+							<label for="EndDate">
+								End Date
+							</label>
+							<input class="form-control" id="EndDate" type="date" value="31-10-2015"/>
+						</div>
+						<div class="col-md-4">
+							<label for="Days">
+								Days
+							</label>
+							<input class="form-control" id="Days" type="text" value="60"/>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					 
+					<label for="SkalaPrioritas">
+						Skala Prioritas
+					</label>
+					<input class="form-control" id="SkalaPrioritas" type="text" />
+				</div>
+				<div class="form-group">
+					 
+					<label for="StatusProyek">
+						Status Proyek
+					</label>
+					<select class="form-control" id="StatusProyek">
+						<option>
+							New
+						</option>
+						<option>
+							Pending
+						</option>
+						<option>
+							Cancel
+						</option>
+						<option>
+							Finish
+						</option>
+					</select>
+				</div>
+				<div class="form-group">
+					 
+					<label for="Customer">
+						Customer
+					</label>
+					<select class="form-control" id="Customer">
+						<option>
+							Andi
+						</option>
+						<option>
+							William
+						</option>
+						<option>
+							Fatra
+						</option>
+						<option>
+							Daniel
+						</option>
+					</select>
+				</div>
+				<div class="form-group">
+					 
+					<label for="PenanggungJawab">
+						Penanggung Jawab
+					</label>
+					<select class="form-control" id="PenanggungJawab">
+						<option>
+							Andy Morgan
+						</option>
+						<option>
+							Ben Davies
+						</option>
+						<option>
+							Carl Andersen
+						</option>
+					</select>
+				</div>
+				<div class="form-group">
+					 
+					<label for="Aktivitas">
+						List Aktivitas
+					</label>
+					<div class="row">
+						<div class="col-md-8">
+							<select class="form-control" id="Aktivitas">
+								<option>
+									Buat Quotation(10)
+								</option>
+								<option>
+									Desain Awal(20)
+								</option>
+								<option>
+									Pembayaran Diterima(50)
+								</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<button type="button" class="btn btn-default btn-success">
+								+
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<table class="table">
+						<tbody>
+							<tr>
+								<td>
+									Buat Quotation(10)
+								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+										Delete
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									Pembayaran Diterima(50)
+								</td>
+								<td>
+									<button type="button" class="btn btn-default">
+										Delete
+									</button>
+								</td>
+							</tr>
+						</tbody>
+					</table> 
+				</div>
+				<div class="form-group">
+					<label for="DeskripsiProyek">
+						Deskripsi Proyek
+					</label>
+					<textarea>
+						Deskripsi Proyek blablabla...
+					</textarea>
+				</div>
+				<button type="submit" class="btn btn-default">
+					Submit
+				</button>
+			</form>
+			<!--/div-->
+		<!--/div-->
+				</div>
+				<div class="col-md-4">
+				</div>
+			</div>
+		</div>
+		<script>
+			function myFunction() {
+			document.getElementById("JenisBaru").style.display = "block";
+
+			}
+		</script>
+	</body>
+	<footer>
+	</footer>
+</html>
