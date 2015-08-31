@@ -68,10 +68,70 @@
 		</nav>
 		<!--div class="container"-->
 			<!--h2 style="padding-top: 50px;">Lihat Proyek</h2-->
+		<div class="container">
+					<h2>List of Projects</h2>
+					 <div class="table-responsive">          
+					  <table class="table">
+						<thead>
+						  <tr>
+							<th>Nama</th>
+							<th>Jenis</th>
+							<th>Customer</th>
+							<th>Status</th>
+							<th>Skala</th>
+							<th>Penanggung Jawab</th>
+							<th>Mulai</th>
+							<th>Selesai</th>
+							<th>Progress</th>
+							<th>Action(s)</th>
+						  </tr>
+						</thead>
+						<tbody>
+						  <tr>
+							<td>Pemantau Saham</td>
+							<td>Saham</td>
+							<td>DPR Surabaya</td>
+							<td>New</td>
+							<td>94</td>
+							<td>William</td>
+							<td>31/8/2015</td>
+							<td>5/1/2016</td>
+							<td>40.29%</td>
+							<td ><button type="button" class="btn btn-default">Edit</button>&nbsp;<button type="button" class="btn btn-default">Delete</button>&nbsp;<button type="button" class="btn btn-default">Clone</button></td>
+						  </tr>
+						  <tr>
+							<td>Bangun Rumah di Sidoarjo</td>
+							<td>Rumah</td>
+							<td>Telkom</td>
+							<td>Pending</td>
+							<td>50</td>
+							<td>Andre</td>
+							<td>22/7/2015</td>
+							<td>30/3/2016</td>
+							<td>51%</td>
+							<td ><button type="button" class="btn btn-default">Edit</button>&nbsp;<button type="button" class="btn btn-default">Delete</button>&nbsp;<button type="button" class="btn btn-default">Clone</button></td>
+						  </tr>
+						  <tr>
+							<td>Bangun Gudang</td>
+							<td>Gudang</td>
+							<td>ITS</td>
+							<td>New</td>
+							<td>20</td>
+							<td>Daniel</td>
+							<td>22/8/2015</td>
+							<td>29/10/2015</td>
+							<td>0%</td>
+							<td ><button type="button" class="btn btn-default">Edit</button>&nbsp;<button type="button" class="btn btn-default">Delete</button>&nbsp;<button type="button" class="btn btn-default">Clone</button></td>
+						  </tr>
+						</tbody>
+					  </table>
+					 </div>
+				</div>
+		<div class="container">
 		<div class="col-md-12">
 			<div class="row">
 				<div class="col-md-8">
-				<h2>Transaksi</h2>
+				<h2>Add New Transaksi</h2>
 			<br/>
 			<form role="form">
 				<div class="form-group">
@@ -262,8 +322,9 @@
 					<label for="DeskripsiProyek">
 						Deskripsi Proyek
 					</label>
-					<textarea>
-						Deskripsi Proyek blablabla...
+					<br />
+					<textarea rows="4" cols="100">
+					...
 					</textarea>
 				</div>
 				<button type="submit" class="btn btn-default">
@@ -276,6 +337,7 @@
 				<div class="col-md-4">
 				</div>
 			</div>
+		</div>
 		</div>
 		<script>
 			function myFunction() {
