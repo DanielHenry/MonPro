@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><script id="" src=""></script><script id="" src=""></script><script id="" src=""></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- The above 2 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Note there is no responsive meta tag here -->
+
+    <title>Monitoring Proyek</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.3.5-dist/css/non-responsive.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+		  <div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#">Monitoring Proyek</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav">
+				<!--li class="active"><a href="#">Tambah Proyek<span class="sr-only">(current)</span></a></li-->
+				<li><a href="#">Tambah Proyek</a></li>
+				<li><a href="#">Tambah Master</a></li>
+			  </ul>
+			  <form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+				  <input type="text" class="form-control" placeholder="Search">
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			  </form>
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Log Out</a></li>
+			  </ul>
+			</div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<!--div class="container"-->
+			<!--h2 style="padding-top: 50px;">Lihat Proyek</h2-->
+			<h2>Lihat Proyek</h2>
+			<!--div class="table-responsive" style="overflow: auto;"-->
+			<div>
+				<table class="table table-hover">
+					<thead>
+					  <tr>
+						<th>No.</th>
+						<th>Proyek</th>
+						<th>Skala Prioritas</th>
+						<th>Klien</th>
+						<th>Tanggal Deadline</th>
+						<th>Status</th>
+						<th>Progress</th>
+						<th>Aktivitas</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr onclick="window.document.location='####';">
+						<td>1</td>
+						<td>Proyek Pemantau Saham</td>
+						<td>94</td>
+						<td>DPR Surabaya</td>
+						<td>31 September 2015</td>
+						<td>Penambahan Database</td>
+						<td>
+							40.29%
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="40.29" aria-valuemin="0" aria-valuemax="100" style="width: 40.29%;">
+									<span class="sr-only">40.29% Complete</span>
+								</div>
+							</div>
+						</td>
+						<td>
+							<div class="alert alert-warning" role="alert" style="display: inline; padding-top: 5px;">TBR</div>
+							<div class="alert alert-warning" role="alert" style="display: inline; padding-top: 5px;">BBN</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<div class="alert alert-success" role="alert" style="display: inline; padding-top: 5px;">BYR</div>
+							<!--span style="color: gray;">TBR</span>
+							<span style="color: gray;">BBH</span>
+							<span style="color: green;">BYR</span-->
+						</td>
+					  </tr>
+					  <tr class="clickable-row" data-href="url://link-for-first-row/">
+						<td>2</td>
+						<td>Bangun Rumah di Sidoardjo</td>
+						<td>50</td>
+						<td>Kakak</td>
+						<td>
+							<div class="alert alert-danger" role="alert">
+								<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+								<span class="sr-only">H-1</span>
+								30 Agustus 2015
+							</div>
+						</td>
+						<td>Pembangunan Gedung</td>
+						<td>
+							50%
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+									<span class="sr-only">50% Complete</span>
+								</div>
+							</div>
+						</td>
+						<td></td>
+					  </tr>
+					  <tr class="clickable-row" data-href="url://link-for-first-row/">
+						<td>3</td>
+						<td>Cuci Mobil</td>
+						<td>20</td>
+						<td>Diri Sendiri</td>
+						<td>10 September 2015</td>
+						<td>New</td>
+						<td>
+							0%
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+									<span class="sr-only">0% Complete</span>
+								</div>
+							</div>
+						</td>
+						<td></td>
+					  </tr>
+					  <tr class="clickable-row" data-href="url://link-for-first-row/">
+						<td>4</td>
+						<td>Cari Pacar</td>
+						<td>20</td>
+						<td>Diri Sendiri</td>
+						<td>1 Desember 2015</td>
+						<td>New</td>
+						<td>
+							1%
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100" style="width: 1%;">
+									<span class="sr-only">1% Complete</span>
+								</div>
+							</div>
+						</td>
+						<td></td>
+					  </tr>
+					  <tr class="clickable-row" data-href="url://link-for-first-row/">
+						<td>5</td>
+						<td>Beli Ruko untuk Seventhsoft</td>
+						<td>20</td>
+						<td>Saya</td>
+						<td>4 November 2005</td>
+						<td>
+							<div class="alert alert-success" role="alert">Finish</div>
+						</td>
+						<td>
+							100%
+							<div class="progress">
+								<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+									<span class="sr-only">100% Complete</span>
+								</div>
+							</div>
+						</td>
+						<td></td>
+					  </tr>
+					</tbody>
+				</table>
+			</div>
+		<!--/div-->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
